@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
-import "../App.css"
+import "../App.css";
+import AiImage from '../../src/png1.jpg'; // Adjust path as necessary
+
 const LandingPage = () => {
     const elementRef = useRef(null);
 
@@ -43,7 +45,7 @@ const LandingPage = () => {
                         <div ref={elementRef}></div>
                     </div>
                     <div className="rightSection">
-                        <img src="../../public/png1.jpg" alt="AI Communication" />
+                        <img src={AiImage} alt="AI Communication" />
                     </div>
                 </section>
 
@@ -52,7 +54,6 @@ const LandingPage = () => {
                     <video id="localVideo" autoPlay muted></video>
                     <video id="remoteVideo" autoPlay></video>
                 </section>
-
 
                 <section id="contact" className="seventhSection">
                     <h1>Contact Us</h1>
