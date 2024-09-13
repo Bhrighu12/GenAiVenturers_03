@@ -28,6 +28,8 @@ const LandingPage = () => {
                         <li><a href="#home">Home</a></li>
                         <li><a href="#video">Video Call</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="/auth">Login</a></li>
+                        <li><a href="#signup">SignUp</a></li>
                     </ul>
                 </nav>
             </header>
