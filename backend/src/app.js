@@ -15,7 +15,17 @@ const server = createServer(app);
 const io = connectToSocket(server);
 
 app.set("port",(process.env.PORT || 8000))
-app.use(cors());
+app.use(cors({
+    origin: 'http://localhost:3000', // Replace with your frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+}));
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*'); // Adjust according to your needs
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    next();
+  });
+  
 app.use(express.json({limit: "40kb"}));
 app.use(express.urlencoded({limit:"40kb", extended:true}));
 
