@@ -28,10 +28,9 @@ const LandingPage = () => {
                     <div className="left">GenAi Venturers</div>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#video">Video Call</a></li>
+                        <li><a href="/home">Video Call</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li><a href="/auth">Login</a></li>
-                        <li><a href="#signup">SignUp</a></li>
                     </ul>
                 </nav>
             </header>
@@ -48,12 +47,13 @@ const LandingPage = () => {
                         <img src={AiImage} alt="AI Communication" />
                     </div>
                 </section>
-
-                {/* Video call section */}
-                <section id="video" className="video-container">
-                    <video id="localVideo" autoPlay muted></video>
-                    <video id="remoteVideo" autoPlay></video>
-                </section>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
 
                 <section id="contact" className="seventhSection">
                     <h1>Contact Us</h1>
